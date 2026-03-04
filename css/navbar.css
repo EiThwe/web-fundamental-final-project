@@ -22,7 +22,7 @@
       color: #212529;
     }
 
-    /* Make center nav ACTUALLY centered on large screens */
+    /* Make center nav */
     @media (min-width: 992px) {
       .navbar .navbar-collapse {
         position: relative;
@@ -32,6 +32,6 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-left: 70px; /* slight right shift like screenshot */
+        margin-left: 70px; /* right shift */
       }
     }

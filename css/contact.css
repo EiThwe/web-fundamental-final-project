@@ -17,7 +17,7 @@ body {
 
 .custom-container {
   width: 100%;
-  padding-inline: 8em;
+  padding-inline: 1rem; /* small devices */
   margin-right: auto;
   margin-left: auto;
 }
@@ -26,6 +26,7 @@ body {
 @media (min-width: 576px) {
   .custom-container {
     max-width: 540px;
+    padding-inline: 1.5rem;
   }
 }
 
@@ -33,6 +34,7 @@ body {
 @media (min-width: 768px) {
   .custom-container {
     max-width: 720px;
+    padding-inline: 2rem;
   }
 }
 
@@ -40,6 +42,7 @@ body {
 @media (min-width: 992px) {
   .custom-container {
     max-width: 960px;
+    padding-inline: 4rem;
   }
 }
 
@@ -47,6 +50,7 @@ body {
 @media (min-width: 1200px) {
   .custom-container {
     max-width: 1140px;
+    padding-inline: 6rem;
   }
 }
 
@@ -54,6 +58,33 @@ body {
 @media (min-width: 1400px) {
   .custom-container {
     max-width: 1320px;
+    padding-inline: 8em;
+  }
+}
+.base-btn {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%; /* full width for small devices */
+}
+
+.custom-btn {
+  background-color: white;
+  color: #000;
+}
+
+.custom-outline-btn {
+  border: 1px solid white;
+  color: #fff;
+}
+
+/* from small devices and above */
+@media (min-width: 576px) {
+  .base-btn {
+    width: auto;
   }
 }
 

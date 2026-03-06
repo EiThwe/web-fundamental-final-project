@@ -1,0 +1,32 @@
+.team-card{
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a{
+    color: grey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover{
+    background-color: rgb(227, 224, 224);
+}
+
+.card-body h4{
+    font-weight: 600;
+    color: #444;
+}

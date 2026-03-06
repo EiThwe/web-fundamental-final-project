@@ -1,0 +1,11 @@
+.demon-card {
+    margin-bottom: 50px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+.demo-img-wrapper {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.demo-img-wrapper:hover {
+    transform: scale(1.03) translateY(-10px);
+}

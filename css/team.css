@@ -33,19 +33,24 @@ body {
 }
 
 .card-section {
-    margin-top: 15px;
-}
-.team-card{
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.social-links{
+.card-body {
+    margin-top: -10px;
+}
+.team-card {
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-.social-links a{
+.social-links a {
     color: grey;
     text-decoration: none;
     display: flex;
@@ -58,7 +63,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover{
+.social-links a:hover {
     background-color: rgb(227, 224, 224);
 }
 
@@ -71,4 +76,19 @@ body {
 .team-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px white;
+    border-radius: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

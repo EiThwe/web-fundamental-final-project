@@ -1,4 +1,4 @@
-.navbar {
+    .navbar {
       padding-top: 18px;
       padding-bottom: 18px;
       background: #fff !important;
@@ -38,4 +38,12 @@
 
     .buy-btn{
       margin-right: 110px;
+    }
+
+    .navbar .nav-link {
+      color: #6c757d;
+    }
+
+    .navbar .nav-link.active {
+      color: #212529;
     }

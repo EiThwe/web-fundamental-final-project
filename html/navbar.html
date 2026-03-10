@@ -24,7 +24,7 @@
 
       <!-- Centered links -->
       <ul class="navbar-nav center-nav">
-        <li class="nav-item mx-2"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#">Pricing</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#">Contact</a></li>
@@ -37,5 +37,20 @@
       </div>
   </div>
 </nav>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
 </body>
 </html>

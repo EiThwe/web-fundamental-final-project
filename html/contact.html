@@ -20,8 +20,39 @@
       rel="stylesheet"
       href="/css/fontawesome-free-7.2.0-web/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/navbar.css">
   </head>
   <body>
+    <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SB UI Kit Pro</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+      <!-- Centered links -->
+      <ul class="navbar-nav center-nav">
+        <li class="nav-item mx-2"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="team.html">Team</a></li>
+      </ul>
+
+      <!-- Buy now button -->
+       
+      <div class="ms-auto buy-btn">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now →</button>
+      </div>
+  </div>
+</nav>
+
+    <!-- Hero -->
     <section class="hero-section">
       <div class="container text-center hero-content">
         <h1 class="hero-title">Contact us</h1>
@@ -209,5 +240,20 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const currentPage = location.pathname.split("/").pop();
+
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+
   </body>
 </html>

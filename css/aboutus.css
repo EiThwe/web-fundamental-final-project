@@ -202,3 +202,209 @@ hr {
     margin-top: 7px;
     margin-bottom: 10px;
 }
+
+/* ============= RESPONSIVE DESIGN ============= */
+
+/* For large desktops (1200px and below) */
+@media screen and (max-width: 1200px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+/* For medium desktops/tablets (992px and below) */
+@media screen and (max-width: 992px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .about-company {
+        height: 350px;
+    }
+    
+    .about-company h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .about-company {
+        height: 300px;
+        padding: 40px 15px;
+    }
+    
+    .about-company h1 {
+        font-size: 2rem;
+    }
+    
+    .about-company h4 {
+        font-size: 1rem;
+    }
+    
+    .quick-guide h3,
+    .feed-back h3 {
+        font-size: 22px;
+    }
+    
+    .title-container {
+        flex-direction: column;  /* Stack circle and title */
+        text-align: center;
+    }
+    
+    .blue-circle-arrow {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    hr {
+        width: 90%;  /* Make HR wider on mobile */
+    }
+}
+
+/* For mobile phones (576px and below) */
+@media screen and (max-width: 576px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .about-company {
+        height: 280px;
+        clip-path: ellipse(100% 95% at 50% 0%);  /* Adjust curve for mobile */
+    }
+    
+    .about-company h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-company h4 {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+    
+    .quick-guide h3,
+    .feed-back h3 {
+        font-size: 20px;
+    }
+    
+    .quick-guide p,
+    .what-we-do p,
+    .how-we-move p,
+    .feed-back p {
+        font-size: 15px;
+    }
+    
+    .about-question {
+        padding: 15px;
+    }
+    
+    .about-question h4 {
+        font-size: 17px;
+    }
+    
+    .about-question p {
+        font-size: 14px;
+    }
+    
+    hr {
+        width: 100%;
+    }
+}
+
+/* For very small phones (400px and below) */
+@media screen and (max-width: 400px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .about-company {
+        height: 250px;
+    }
+    
+    .about-company h1 {
+        font-size: 1.5rem;
+    }
+    
+    .blue-circle-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .title-container h3 {
+        font-size: 18px;
+    }
+}
+
+/* Fix for very large screens (optional) */
+@media screen and (min-width: 1600px) {
+    .quick-guide,
+    .what-we-do,
+    .how-we-move,
+    .feed-back,
+    .title-container,
+    .about-question {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;  /* Prevent content from getting too wide */
+    }
+}
+
+/* Fix for the about-company text visibility */
+.about-company h1,
+.about-company h4 {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);  /* Better text visibility on gradient */
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions for responsive changes */
+.quick-guide,
+.what-we-do,
+.how-we-move,
+.feed-back,
+.title-container,
+.about-question,
+.about-company {
+    transition: all 0.3s ease;
+}

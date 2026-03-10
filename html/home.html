@@ -7,19 +7,26 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/metropolis/400.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/metropolis/500.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/metropolis/700.css">
+
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/calltoaction.css">
   <link rel="stylesheet" href="../css/testimonial.css">
   <link rel="stylesheet" href="../css/documentation.css">
   <link rel="stylesheet" href="../css/demo.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
 
-  <!-- NavBar -->
+<!-- NavBar -->
   <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">KOA UI Kit</a>
+  <div class="container-fluid px-3 px-md-4 px-lg-5">
+    
+    <a class="navbar-brand" href="home.html">KOA UI Kit</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,18 +37,19 @@
 
       <!-- Centered links -->
       <ul class="navbar-nav center-nav">
-        <li class="nav-item mx-2"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
       </ul>
 
-      <!-- Buy now button -->
-       
-      <div class="ms-auto buy-btn">
-        <button type="button" class="btn btn-primary btn-sm">Buy Now →</button>
+      <!-- button -->
+      <div class="nav-btn-wrapper ms-lg-auto">
+        <button type="button" class="btn btn-primary buy-btn">Buy Now →</button>
       </div>
+
+    </div>
   </div>
 </nav>
 
@@ -142,44 +150,48 @@
         </div>          
     </section>
 
-  <!-- CTA section -->
-  <section class="cta-section">
-    <div class="container text-center">
+ 
+<!-- CTA section -->
+<section class="cta-section">
+  <div class="container text-center">
 
-      <h1 class="cta-title mb-3">Grow better with KOA UI Kit</h1>
+    <h1 class="cta-title">Grow better with KOA UI Kit</h1>
 
-      <p class="cta-subtitle mb-4">
-        Go live in 3 weeks. GDPR compliant. ISO 27001 certification in progress.
-      </p>
+    <p class="cta-text">
+      A complete UI toolkit packed with components, layouts, and templates to speed up your workflow.
+    </p>
 
-      <div class="d-flex gap-3 justify-content-center flex-wrap mb-4">
-        <!-- Button 1 -->
-        <a href="pricing.html" class="btn cta-btn cta-btn-light px-5 py-3">
-          Get a Demo <span class="ms-2">→</span>
-        </a>
+    <div class="cta-buttons d-flex justify-content-center gap-3 flex-wrap">
 
-        <!-- Button 2 -->
-        <a href="pricing.html" class="btn cta-btn cta-btn-outline px-5 py-3">
-          Get Started Free <span class="ms-2">→</span>
-        </a>
-      </div>
+      <a href="pricing.html" class="btn btn-light">
+        Get a Demo →
+      </a>
 
-      <p class="cta-trust mb-0">
-        Trusted by Axi, Infinox, Vantage Markets, M4 Markets, easyMarkets, OANDA, GTCFX, IronFX, Atmos Funded, IC Funded, and more.
-      </p>
+      <a href="pricing.html" class="btn btn-outline-light">
+        Get Started Free →
+      </a>
 
     </div>
-  </section>
 
+  </div>
+</section>
 
-  <!-- Testimonial Carousel -->
-<section class="py-5 testimonial-section">
-  <div class="container">
-    <h1 class="testimonial-title text-center mb-3">Client Review</h1>
+<!-- Testimonial Carousel -->
+<section class="testimonial-section py-5">
+  <div class="custom-container">
+    <h1 class="testimonial-title text-center">Client Reviews</h1>
+
+    <p class="testimonial-subtitle text-center">
+      See what our customers say about their experience using KOA UI Kit.
+    </p>
+
     <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
 
       <!-- Indicators -->
-      <div class="carousel-indicators testimonial-indicators"> <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+      <div class="carousel-indicators testimonial-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
       <!-- Slides -->
@@ -187,10 +199,9 @@
 
         <!-- SLIDE 1 -->
         <div class="carousel-item active">
-          <div class="row g-4">
+          <div class="row g-4 justify-content-center">
 
-            <!-- CARD 1 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★☆☆</div>
 
@@ -201,8 +212,7 @@
                 </p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review1.jpg"
-                       class="testimonial-img me-3" alt="Michael">
+                  <img src="../image/review1.jpg" class="testimonial-img me-3" alt="Michael">
 
                   <div>
                     <h6 class="mb-0">Michael Wilson</h6>
@@ -212,8 +222,7 @@
               </div>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★★★</div>
 
@@ -224,8 +233,7 @@
                 </p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review2.jpg"
-                       class="testimonial-img me-3" alt="Luke">
+                  <img src="../image/review2.jpg" class="testimonial-img me-3" alt="Luke">
 
                   <div>
                     <h6 class="mb-0">Luke Reeves</h6>
@@ -240,9 +248,9 @@
 
         <!-- SLIDE 2 -->
         <div class="carousel-item">
-          <div class="row g-4">
+          <div class="row g-4 justify-content-center">
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★★★</div>
 
@@ -252,8 +260,7 @@
                 </p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review3.jpg"
-                       class="testimonial-img me-3" alt="David">
+                  <img src="../image/review3.jpg" class="testimonial-img me-3" alt="David">
 
                   <div>
                     <h6 class="mb-0">David Clark</h6>
@@ -263,7 +270,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★★☆</div>
 
@@ -273,8 +280,7 @@
                 </p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review4.jpg"
-                       class="testimonial-img me-3" alt="Sarah">
+                  <img src="../image/review4.jpg" class="testimonial-img me-3" alt="Sarah">
 
                   <div>
                     <h6 class="mb-0">Sarah Jones</h6>
@@ -289,17 +295,19 @@
 
         <!-- SLIDE 3 -->
         <div class="carousel-item">
-          <div class="row g-4">
+          <div class="row g-4 justify-content-center">
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★★★</div>
+
                 <p class="testimonial-text mt-2">
                   Excellent support and super smooth onboarding. Highly recommended.
                 </p>
+
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review5.jpg"
-                       class="testimonial-img me-3" alt="John">
+                  <img src="../image/review5.jpg" class="testimonial-img me-3" alt="John">
+
                   <div>
                     <h6 class="mb-0">John Carter</h6>
                     <small class="text-muted">Founder</small>
@@ -308,15 +316,17 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-5">
               <div class="card testimonial-card p-4 h-100">
                 <div class="stars">★★★★☆</div>
+
                 <p class="testimonial-text mt-2">
                   Nice UI and faster workflow. It saved us many hours every week.
                 </p>
+
                 <div class="d-flex align-items-center mt-4">
-                  <img src="../image/review6.jpg"
-                       class="testimonial-img me-3" alt="Emma">
+                  <img src="../image/review6.jpg" class="testimonial-img me-3" alt="Emma">
+
                   <div>
                     <h6 class="mb-0">Emma Stone</h6>
                     <small class="text-muted">Operations</small>
@@ -330,71 +340,151 @@
 
       </div>
 
-      <!-- Carousel Controls button-->
-      <button class="carousel-control-prev" type="button"
-      data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <!-- Controls -->
+      <button class="carousel-control-prev testimonial-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
       </button>
 
-      <button class="carousel-control-next" type="button"
-      data-bs-target="#testimonialCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <button class="carousel-control-next testimonial-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
       </button>
+
     </div>
-
   </div>
 </section>
 
-  <!-- Documentation -->
-   <section class="py-5 py-lg-6 bg-white">
+<!-- Documentation -->
+<section class="docs-section py-5 py-lg-6 bg-white">
+
   <div class="container py-4">
 
     <!-- Heading -->
     <div class="text-center mx-auto docs-head">
-      <h2 class="docs-title mb-3">Documentation</h2>
-      <p class="docs-subtitle mb-0">
-        Comprehensive documentation includes usage instructions, component reference,<br class="d-none d-md-block">
+
+      <h2 class="docs-title">Documentation</h2>
+
+      <p class="docs-subtitle mt-3">
+        Comprehensive documentation includes usage instructions, component reference,
+        <br class="d-none d-md-block">
         and utility class usage instructions
       </p>
+
     </div>
+
 
     <!-- Stats -->
     <div class="row text-center g-5 mt-4 mt-lg-5">
 
+      <!-- Item -->
       <div class="col-12 col-md-4">
-        <div class="docs-stat">70+</div>
-        <h5 class="docs-label mt-3">Custom/Extended Components</h5>
-        <p class="docs-desc mb-0">
-          We've extended and restyled Bootstrap's default components, and built a suite of
-          new custom components.
+
+        <div class="display-1 docs-stat">70+</div>
+
+        <h5 class="docs-label mt-3">
+          Custom/Extended Components
+        </h5>
+
+        <p class="docs-desc">
+          We've extended and restyled Bootstrap's default components,
+          and built a suite of new custom components.
         </p>
+
       </div>
 
+
+      <!-- Item -->
       <div class="col-12 col-md-4">
-        <div class="docs-stat">35+</div>
-        <h5 class="docs-label mt-3">Pre-Built Page Examples</h5>
-        <p class="docs-desc mb-0">
-          Our pre-built page examples are a perfect way to get inspired for creating new
-          pages and views.
+
+        <div class="display-1 docs-stat">35+</div>
+
+        <h5 class="docs-label mt-3">
+          Pre-Built Page Examples
+        </h5>
+
+        <p class="docs-desc">
+          Our pre-built page examples are a perfect way to get inspired
+          for creating new pages and views.
         </p>
+
       </div>
 
-      <div class="col-12 col-md-4">
-        <div class="docs-stat">100+</div>
-        <h5 class="docs-label mt-3">Custom/Extended Utilities</h5>
-        <p class="docs-desc mb-0">
-          We've extended and created new utility classes to give you more control over your
-          content with minimal custom CSS.
-        </p>
-      </div>
 
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary btn-sm">View Documentation</button>
+      <!-- Item -->
+      <div class="col-12 col-md-4">
+
+        <div class="display-1 docs-stat">100+</div>
+
+        <h5 class="docs-label mt-3">
+          Custom/Extended Utilities
+        </h5>
+
+        <p class="docs-desc">
+          We've extended and created new utility classes to give you
+          more control over your content with minimal custom CSS.
+        </p>
+
       </div>
 
     </div>
+
+
+    <!-- Button -->
+    <div class="text-center mt-5">
+      <button class="btn btn-primary px-4 py-2">
+        View Documentation
+      </button>
+    </div>
+
   </div>
+
 </section>
+
+<!-- Footer -->
+ <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo/Brand Section - takes 4 columns -->
+                <div class="col-md-4 mb-4">
+                     <h5 class="fw-bold">Echo UI HIT</h5>
+                     <p class="text-white-50">Build better websites</p>  <!-- Changed to white-50 -->
+                </div>
+    
+                <!-- QUICK LINKS - takes 4 columns -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">QUICK LINKS</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">Pricing</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">Team</a></li>  <!-- Changed -->
+                    </ul>
+                </div>
+    
+                <!-- LEGAL - takes 4 columns -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">LEGAL</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms and Conditions</a></li>  <!-- Changed -->
+                        <li><a href="#" class="text-white-50 text-decoration-none">License</a></li>  <!-- Changed -->
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Copyright Row -->
+            <hr class="bg-white opacity-25">  <!-- Changed to white -->
+            <div class="row">
+                <div class="col-md-6 text-white-50">  <!-- Changed -->
+                    <p class="mb-0">Copyright © Your Website 2026</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>  <!-- Changed -->
+                    <a href="#" class="text-white-50 text-decoration-none">Terms & Conditions</a>  <!-- Changed -->
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <script>
   const currentPage = location.pathname.split("/").pop();

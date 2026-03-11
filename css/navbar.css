@@ -1,3 +1,6 @@
+body {
+  font-family: "Metropolis", sans-serif;
+}
 
 .navbar {
   background: #fff !important;
@@ -6,12 +9,15 @@
   z-index: 1050;
 }
 
-.navbar .container {
+.navbar .custom-container {
   min-height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .navbar-brand {
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   font-weight: 700;
   color: #0d5fe9 !important;
   letter-spacing: 0;
@@ -66,7 +72,7 @@
     padding: 10px 0;
   }
 
-  .navbar .container {
+  .navbar .custom-container {
     position: relative;
   }
 
@@ -75,6 +81,7 @@
   }
 
   .navbar-toggler {
+    margin-left: auto;
     padding: 6px 10px;
     border-radius: 10px;
   }
@@ -89,6 +96,7 @@
     border: 1px solid #ececec;
     border-radius: 12px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    z-index: 999;
   }
 
   .navbar .navbar-nav.center-nav {
@@ -132,6 +140,9 @@
   .navbar .navbar-collapse {
     position: relative;
     min-height: 40px;
+    display: flex !important;
+    align-items: center;
+    flex: 1;
   }
 
   .navbar .navbar-nav.center-nav {
@@ -143,6 +154,7 @@
     align-items: center;
     gap: 12px;
     margin: 0;
+    padding-left: 0;
   }
 
   .nav-btn-wrapper {

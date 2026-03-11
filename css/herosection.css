@@ -8,7 +8,7 @@
 .hero-section {
     display: flex;
     align-items: center;      
-    gap: 10px;
+    /* gap: 10px; */
     margin-left:  150px;
     margin-right: 150px;
     margin-top: 20px;
@@ -18,13 +18,13 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #2d2e2e;
-    font-weight: 600;  /* Made less bold (was bold) */
+    font-weight: 500;  /* Made less bold (was bold) */
 }
 
 .hero-content p {
     color: #8e8e8e;
     line-height: 1.5;
-    font-size: 21px;
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 400;  /* Made bolder (was lighter) */

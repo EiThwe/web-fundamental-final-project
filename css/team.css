@@ -1,6 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/100.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/200.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/300.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/400.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/500.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/600.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/700.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/800.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/900.css");
+
 body {
-    background-color: #e9ecef;
+  margin: 0;
+  font-family: "Metropolis", sans-serif !important;
+  letter-spacing: 0.5px;
+  background-color: #e9ecef;
 }
+
+.custom-container {
+  width: 100%;
+  padding-inline: 1rem; /* small devices */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small devices */
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+    padding-inline: 1.5rem;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+    padding-inline: 2rem;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+    padding-inline: 4rem;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1140px;
+    padding-inline: 6rem;
+  }
+}
+
+/* XXL devices */
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1320px;
+    padding-inline: 8em;
+  }
+}
+
 .hero-section {
   padding-top: 70px;
   height: 450px;
@@ -37,11 +98,20 @@ body {
 }
 
 .card-body {
-    margin-top: -10px;
+    margin-top: -20px;
 }
+
 .team-card {
     margin-bottom: 80px;
     margin-top: 30px;
+    background-color: white;
+    border-radius: 15px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .social-links {
@@ -67,17 +137,6 @@ body {
     background-color: rgb(227, 224, 224);
 }
 
-.team-card {
-    background-color: white;
-    border-radius: 15px;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
 .team-img {
     margin-top: -50px;
     display: flex;
@@ -85,8 +144,8 @@ body {
 }
 
 .team-img img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 2px white;
     border-radius: 100%;

@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -8,11 +8,11 @@ html, body {
 body {
     flex: 1;
 
-}
+} */
 
 footer {
     margin-top: auto; 
-    font-family: sans-serif, "Metropolis" !important;
+    /* font-family: sans-serif, "Metropolis" !important; */
 
 }
 
@@ -22,33 +22,41 @@ footer {
 
 /* ============= RESPONSIVE DESIGN - FOOTER ============= */
 
-/* For large desktops (1200px and below) */
+
 @media screen and (max-width: 1200px) {
     footer .container {
         max-width: 960px;
         margin: 0 auto;
     }
+    
+    footer a {
+        font-size: 0.8rem;
+    }
 }
 
-/* For medium desktops/tablets (992px and below) */
+
 @media screen and (max-width: 992px) {
     footer .container {
         max-width: 720px;
     }
     
     footer .row {
-        row-gap: 30px;  /* Add space between stacked columns */
+        row-gap: 30px;
     }
     
     footer h5, footer h6 {
         font-size: 1rem;
+    }
+    
+    footer a {
+        font-size: 0.8rem;
     }
 }
 
 /* For tablets (768px and below) */
 @media screen and (max-width: 768px) {
     footer {
-        padding: 40px 0 !important;  /* Reduce padding */
+        padding: 40px 0 !important;
     }
     
     footer .container {
@@ -56,7 +64,7 @@ footer {
     }
     
     footer .row {
-        text-align: center;  /* Center all footer content */
+        text-align: center;
     }
     
     footer .col-md-4 {
@@ -80,6 +88,10 @@ footer {
     footer .text-md-end {
         text-align: center !important;
         margin-top: 15px;
+    }
+    
+    footer a {
+        font-size: 0.8rem;
     }
     
     hr {
@@ -114,14 +126,14 @@ footer {
     }
     
     footer a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        font-weight: lighter;
     }
     
     footer .row > div {
         margin-bottom: 25px !important;
     }
     
-    /* Stack copyright row */
     footer .row .col-md-6 {
         text-align: center !important;
         margin-bottom: 10px;
@@ -151,7 +163,7 @@ footer {
     }
     
     footer a {
-        font-size: 0.85rem;
+        font-size: 0.75rem;  /* Slightly smaller on tiny screens */
     }
     
     footer p {
@@ -178,7 +190,7 @@ footer {
     }
     
     footer a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 

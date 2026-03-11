@@ -65,7 +65,7 @@
 
 .btn-demo:hover {
     background: #083982;  
-    transform: scale(1.05); 
+    color: aliceblue; 
     transition: all 0.3s ease; 
 }
 
@@ -73,7 +73,7 @@
     background: #0d6efd;  
     color: white;         
     border-color: #0d6efd;
-    transform: scale(1.05); 
+     
     transition: all 0.3s ease;
 }
 
@@ -236,7 +236,7 @@
     
     .btn-demo,
     .btn-doc {
-        padding: 16px 22px;  /* Slightly larger on big screens */
+        padding: 14px 20px;  
         font-size: 17px;
     }
 }

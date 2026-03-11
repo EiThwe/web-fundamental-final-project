@@ -18,18 +18,17 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #2d2e2e;
-    font-weight:bold;
+    font-weight: 600;  /* Made less bold (was bold) */
 }
 
-.hero-content P {
+.hero-content p {
     color: #8e8e8e;
     line-height: 1.5;
     font-size: 21px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: lighter;
+    font-weight: 400;  /* Made bolder (was lighter) */
 }
-
 
 .hero-image img {
     width: 800px;                  
@@ -44,33 +43,33 @@
     margin-top: 40px;
 }
 
-.btn-primary {
+.btn-demo {
     background: #0d6efd;
     color: white;
     border: none;
-    padding: 18px 24px;
+    padding: 14px 20px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.btn-secondary {
+.btn-doc {
     background:#e0e9f8 ;
     color: #0d6efd;
     border: 1px solid #0d6efd;
-    padding: 18px 24px;
+    padding: 14px 20px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.btn-primary:hover {
+.btn-demo:hover {
     background: #083982;  
     transform: scale(1.05); 
     transition: all 0.3s ease; 
 }
 
-.btn-secondary:hover {
+.btn-doc:hover {
     background: #0d6efd;  
     color: white;         
     border-color: #0d6efd;
@@ -79,7 +78,6 @@
 }
 
 /* ============= RESPONSIVE DESIGN - HERO SECTION ============= */
-
 
 @media screen and (max-width: 1200px) {
     .hero-section {
@@ -90,12 +88,13 @@
     
     .hero-image img {
         width: 500px;
-        height: auto;  /* Changed from 550px to auto */
+        height: auto;
         max-height: 550px;
     }
     
     .hero-content h1 {
         font-size: 2.2rem;
+        font-weight: 600;
     }
 }
 
@@ -109,26 +108,28 @@
     
     .hero-image img {
         width: 400px;
-        height: auto;  /* Changed from 450px to auto */
+        height: auto;
         max-height: 450px;
     }
     
     .hero-content h1 {
         font-size: 2rem;
+        font-weight: 600;
     }
     
     .hero-content p {
         font-size: 18px;
+        font-weight: 400;
     }
     
-    .btn-primary,
-    .btn-secondary {
-        padding: 15px 20px;
+    .btn-demo,
+    .btn-doc {
+        padding: 12px 18px;  /* Adjusted for medium screens */
         font-size: 15px;
     }
 }
 
-/* Keep this one as is - it's good! */
+/* For tablets (768px and below) */
 @media screen and (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -146,19 +147,80 @@
     
     .hero-content h1 {
         font-size: 1.8rem;
+        font-weight: 600;
     }
     
     .hero-content p {
         font-size: 17px;
+        font-weight: 400;
     }
     
     .button-group {
         justify-content: center;
         margin-top: 30px;
     }
+    
+    .btn-demo,
+    .btn-doc {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
 }
 
-/* Fix the 1600px rule */
+/* For mobile phones (576px and below) */
+@media screen and (max-width: 576px) {
+    .hero-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .btn-demo,
+    .btn-doc {
+        width: 100%;
+        padding: 14px 20px;  /* Back to original for mobile */
+        font-size: 16px;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+/* For very small phones (400px and below) */
+@media screen and (max-width: 400px) {
+    .hero-section {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    .hero-content p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+/* For very large screens */
 @media screen and (min-width: 1600px) {
     .hero-section {
         margin-left: auto;
@@ -167,9 +229,15 @@
     }
     
     .hero-image img {
-        width: 700px;        /* Match main size */
-        height: auto;        /* Changed from 800px */
+        width: 700px;
+        height: auto;
         max-height: 600px;
+    }
+    
+    .btn-demo,
+    .btn-doc {
+        padding: 16px 22px;  /* Slightly larger on big screens */
+        font-size: 17px;
     }
 }
 
@@ -178,7 +246,7 @@
 .hero-content p,
 .hero-image img,
 .button-group,
-.btn-primary,
-.btn-secondary {
+.btn-demo,
+.btn-doc {
     transition: all 0.3s ease;
 }

@@ -12,7 +12,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: sans-serif, "Metropolis";
+  font-family: sans-serif, "Metropolis" !important;
   background-color: #fcfdfe;
   color: #333;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .about-company h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 200;
   color: #f7f5f5;
   margin-top: 2;
@@ -58,19 +58,18 @@ body {
 }
 
 .quick-guide h3 {
-    font-family: sans-serif;
     font-weight:400;
     font-size: 24px;
     color: #3c3737;
 }
 
 .quick-guide p {
-    font-family: sans-serif;
     color: #8e8e8e;
     line-height: 1.5;
     font-size: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight:lighter;
 }
 
 /*--------  ----------*/
@@ -120,7 +119,7 @@ hr {
 }
 
 .what-we-do p {
-    font-family: sans-serif;
+    font-weight:lighter;
     color: #8e8e8e;
     line-height: 1.5;
     font-size: 17px;
@@ -162,9 +161,9 @@ hr {
     margin-bottom: 1px;
 }
 
-/*-------- ADD THIS AFTER your .about-question styles ----------*/
 
-/* Fix the about-question list spacing - keeps text away from left border */
+
+/* Fixing the about-question list spacing */
 .about-question ul {
     padding-left: 25px;
     margin-top: 5px;
@@ -177,6 +176,8 @@ hr {
 
 .about-question li p {
     margin: 3px 0;
+    font-weight:lighter;
+
 }
 
 /*--------  ----------*/
@@ -189,7 +190,7 @@ hr {
 }
 
 .how-we-move p {
-    font-family: sans-serif;
+    font-weight:lighter;
     color: #8e8e8e;
     line-height: 1.5;
     font-size: 17px;
@@ -213,7 +214,7 @@ hr {
 }
 
 .feed-back P{
-     font-family: sans-serif;
+    font-weight:lighter;
     color: #8e8e8e;
     line-height: 1.5;
     font-size: 17px;
@@ -221,7 +222,7 @@ hr {
     margin-bottom: 10px;
 }
 
-/* ============= RESPONSIVE DESIGN - FIXED FOR OVERFLOW ============= */
+/* ============= RESPONSIVE DESIGN ============= */
 
 /* For large desktops (1200px and below) */
 @media screen and (max-width: 1200px) {

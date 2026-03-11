@@ -12,6 +12,8 @@ body {
 
 footer {
     margin-top: auto; 
+    font-family: sans-serif, "Metropolis" !important;
+
 }
 
 .bg-dark {

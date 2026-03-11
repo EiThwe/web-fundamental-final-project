@@ -73,7 +73,7 @@ body {
 
 .custom-btn {
   background-color: white;
-  color: #000;
+  color: #156ef3;
 }
 
 .custom-outline-btn {
@@ -224,6 +224,7 @@ body {
 }
 
 .form-control::placeholder {
+  font-family: "Metropolis", sans-serif !important;
   color: #ddd;
   opacity: 0.5;
   font-size: 14px;

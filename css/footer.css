@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+
+}
+
+footer {
+    margin-top: auto; 
+    font-family: sans-serif, "Metropolis" !important;
+
+}
+
+.bg-dark {
+    background: linear-gradient(135deg, #0d6efd, #442481) !important;
+}
+
+/* ============= RESPONSIVE DESIGN - FOOTER ============= */
+
+/* For large desktops (1200px and below) */
+@media screen and (max-width: 1200px) {
+    footer .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* For medium desktops/tablets (992px and below) */
+@media screen and (max-width: 992px) {
+    footer .container {
+        max-width: 720px;
+    }
+    
+    footer .row {
+        row-gap: 30px;  /* Add space between stacked columns */
+    }
+    
+    footer h5, footer h6 {
+        font-size: 1rem;
+    }
+}
+
+/* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 40px 0 !important;  /* Reduce padding */
+    }
+    
+    footer .container {
+        max-width: 540px;
+    }
+    
+    footer .row {
+        text-align: center;  /* Center all footer content */
+    }
+    
+    footer .col-md-4 {
+        margin-bottom: 30px !important;
+    }
+    
+    footer h5 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    footer h6 {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+    
+    footer ul {
+        padding-left: 0;
+    }
+    
+    footer .text-md-end {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+    
+    hr {
+        margin: 30px 0;
+        width: 100%;
+    }
+}
+
+/* For mobile phones (576px and below) */
+@media screen and (max-width: 576px) {
+    footer {
+        padding: 30px 0 !important;
+    }
+    
+    footer .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    footer h5 {
+        font-size: 1.2rem;
+    }
+    
+    footer h6 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    
+    footer ul li {
+        margin-bottom: 8px;
+    }
+    
+    footer a {
+        font-size: 0.9rem;
+    }
+    
+    footer .row > div {
+        margin-bottom: 25px !important;
+    }
+    
+    /* Stack copyright row */
+    footer .row .col-md-6 {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+    
+    footer .row .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+    
+    hr {
+        margin: 20px 0;
+    }
+}
+
+/* For very small phones (400px and below) */
+@media screen and (max-width: 400px) {
+    footer {
+        padding: 25px 0 !important;
+    }
+    
+    footer h5 {
+        font-size: 1.1rem;
+    }
+    
+    footer h6 {
+        font-size: 0.95rem;
+    }
+    
+    footer a {
+        font-size: 0.85rem;
+    }
+    
+    footer p {
+        font-size: 0.85rem;
+    }
+    
+    footer .row > div {
+        margin-bottom: 20px !important;
+    }
+}
+
+/* For very large screens */
+@media screen and (min-width: 1600px) {
+    footer .container {
+        max-width: 1400px;
+    }
+    
+    footer h5 {
+        font-size: 1.5rem;
+    }
+    
+    footer h6 {
+        font-size: 1.1rem;
+    }
+    
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure smooth transitions */
+footer, footer * {
+    transition: all 0.3s ease;
+}
+
+/* Fix for gradient on mobile */
+@media (max-width: 768px) {
+    .bg-dark {
+        background: linear-gradient(135deg, #0d6efd, #442481) !important;
+    }
+}

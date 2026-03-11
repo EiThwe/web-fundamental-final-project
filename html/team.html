@@ -7,9 +7,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 
 </head>
 <body>
+    
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container px-5">
+
+    <a class="navbar-brand" href="home.html">KOA UI Kit</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!-- Center nav -->
+      <ul class="navbar-nav center-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Team</a>
+        </li>
+      </ul>
+
+      <!-- button -->
+      <div class="nav-btn-wrapper ms-lg-auto">
+        <a href="team.html" class="btn btn-primary buy-btn">Buy Now <span class="ms-1">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero -->
     <section class="hero-section">
       <div class="container text-center hero-content">
         <h1 class="hero-title font-weight-bold">Meet the team</h1>
@@ -24,98 +68,125 @@
         </svg>
       </div>
     </section>
-    <section class="card-section container py-5">
-        <div class="row g-4 text-center justify-content-center">
-            <!-- card 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card team-card border-0 shadow">
-                    <div class="team-img"></div>
-                    <div class="card-body pt-5">
-                        <h4 class="mb-1">iiiiii</h4>
-                        <p class="text-muted fst-italic small">Managing</p>
-                        <p class="card-text text-secondary px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
-                    </div>
-                    <div class="card-footer bg-light border-0 py-3 social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- card 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card team-card border-0 shadow">
-                    <div class="team-img"></div>
-                    <div class="card-body pt-5">
-                        <h4 class="mb-1">iiiiii</h4>
-                        <p class="text-muted fst-italic small">Managing</p>
-                        <p class="card-text text-secondary px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
-                    </div>
-                    <div class="card-footer bg-light border-0 py-3 social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+    <section class="card-section py-5">
+        <div class="custom-container">
+            <div class="row g-4 text-center justify-content-center">
+                <!-- card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 shadow">
+                        <div class="team-img">
+                            <img src="../image/cutie.jpg" alt="cute" class="rounded-image">
+                        </div>
+                        <div class="card-body pt-5">
+                            <h4 class="mb-1 text-muted">Sylvia Htoo</h4>
+                            <p class="text-dark text-opacity-50 fst-italic small">Managing</p>
+                            <p class="card-text text-muted px-3 small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                        </div>
+                        <div class="card-footer bg-light border-0 py-3 social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                
+                <!-- card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 shadow">
+                        <div class="team-img">
+                            <img src="../image/cutie.jpg" alt="cute" class="rounded-image">
+                        </div>
+                        <div class="card-body pt-5">
+                            <h4 class="mb-1 text-muted">Khant Katae Khin</h4>
+                            <p class="text-dark text-opacity-50 fst-italic small">Managing</p>
+                            <p class="card-text text-muted px-3 small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                        </div>
+                        <div class="card-footer bg-light border-0 py-3 social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- card 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card team-card border-0 shadow">
-                    <div class="team-img"></div>
-                    <div class="card-body pt-5">
-                        <h4 class="mb-1">iiiiii</h4>
-                        <p class="text-muted fst-italic small">Managing</p>
-                        <p class="card-text text-secondary px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
-                    </div>
-                    <div class="card-footer bg-light border-0 py-3 social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card 4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card team-card border-0 shadow">
-                    <div class="team-img"></div>
-                    <div class="card-body pt-5">
-                        <h4 class="mb-1">iiiiii</h4>
-                        <p class="text-muted fst-italic small">Managing</p>
-                        <p class="card-text text-secondary px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
-                    </div>
-                    <div class="card-footer bg-light border-0 py-3 social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                <!-- card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 shadow">
+                        <div class="team-img">
+                            <img src="../image/cutie.jpg" alt="cute" class="rounded-image">
+                        </div>
+                        <div class="card-body pt-5">
+                            <h4 class="mb-1 text-muted">Thwe Thwe Htun</h4>
+                            <p class="text-dark text-opacity-50 fst-italic small">Managing</p>
+                            <p class="card-text text-muted px-3 small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                        </div>
+                        <div class="card-footer bg-light border-0 py-3 social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- card 5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card team-card border-0 shadow">
-                    <div class="team-img"></div>
-                    <div class="card-body pt-5">
-                        <h4 class="mb-1">iiiiii</h4>
-                        <p class="text-muted fst-italic small">Managing</p>
-                        <p class="card-text text-secondary px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                <!-- card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 shadow">
+                        <div class="team-img">
+                            <img src="../image/cutie.jpg" alt="cute" class="rounded-image">
+                        </div>
+                        <div class="card-body pt-5">
+                            <h4 class="mb-1 text-muted">Moe Myat Han</h4>
+                            <p class="text-dark text-opacity-50 fst-italic small">Managing</p>
+                            <p class="card-text text-muted px-3 small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                        </div>
+                        <div class="card-footer bg-light border-0 py-3 social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
-                    <div class="card-footer bg-light border-0 py-3 social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <!-- card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 shadow">
+                        <div class="team-img">
+                            <img src="../image/cutie.jpg" alt="cute" class="rounded-image">
+                        </div>
+                        <div class="card-body pt-5">
+                            <h4 class="mb-1 text-muted">Aye Myat Thu</h4>
+                            <p class="text-dark text-opacity-50 fst-italic small">Managing</p>
+                            <p class="card-text text-muted px-3 small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>            
+                        </div>
+                        <div class="card-footer bg-light border-0 py-3 social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const currentPage = location.pathname.split("/").pop();
+
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute("href");
+
+            if (linkPage === currentPage) {
+            link.classList.add("active");
+            }
+        });
+    </script>
+
 </body>
 </html>

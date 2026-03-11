@@ -1,11 +1,77 @@
-.demon-card {
-    margin-bottom: 50px;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/100.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/200.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/300.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/400.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/500.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/600.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/700.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/800.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/900.css");
+
+body {
+  margin: 0;
+  font-family: "Metropolis", sans-serif !important;
+  letter-spacing: 0.5px;
+  background-color: #e9ecef;
+}
+
+.custom-container {
+  width: 100%;
+  padding-inline: 1rem; /* small devices */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small devices */
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+    padding-inline: 1.5rem;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+    padding-inline: 2rem;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+    padding-inline: 4rem;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1140px;
+    padding-inline: 6rem;
+  }
+}
+
+/* XXL devices */
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1320px;
+    padding-inline: 8em;
+  }
+}
+
+demo-card h5 {
+  font-size: 16px;
 }
 .demo-img-wrapper {
     border-radius: 15px;
     margin-bottom: 20px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 .demo-img-wrapper:hover {
-    transform: scale(1.03) translateY(-10px);
+    /* transform: scale(1.03) translateY(-10px); */
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }

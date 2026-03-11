@@ -10,46 +10,26 @@
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
-<!-- NavBar -->
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container px-5">
-
-    <a class="navbar-brand" href="home.html">KOA UI Kit</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <!-- Center nav -->
-      <ul class="navbar-nav center-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-arrow" href="aboutus.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-arrow" href="pricing.html">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-arrow" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-arrow" href="team.html">Team</a>
-        </li>
-      </ul>
-
-      <!-- button -->
-      <div class="nav-btn-wrapper ms-lg-auto">
-        <a href="team.html" class="btn btn-primary buy-btn">Buy Now <span class="ms-1">→</span></a>
-      </div>
-
-    </div>
-  </div>
-</nav>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SB UI Kit Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item mx-2"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Team</a></li>
+                </ul>
+                <div class="ms-auto me-5">
+                    <button type="button" class="btn btn-primary btn-lg">Buy Now →</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 <!-- Hero -->
     <section class="hero-section">
         <div class="container text-center hero-content">
@@ -63,15 +43,15 @@
         </div>
     </section>
 <!-- sub1 -->
-    <main class="container py-5">
+    <main class="custom-container">
         <div class="text-center mb-5">
             <h5 class="fw-bold">Simple Pricing</h5>
             <p class="text-muted">Easy pricing means no surprises.</p>
         </div>
 <!-- Card1 -->
-        <div class="row justify-content-center align-items-center g-4">
-            <div class="col-md-4 col-lg-3">
-                <div class="price-card h-100">
+        <div class="custom-container row pricing-row g-0 justify-content-center align-items-center g-4">
+            <div class="col-md-3 col-lg-3">
+                <div class="price-card">
                     <span class="badge bg-light text-muted mb-3">Free</span>
                     <h2>$0<span class="fs-6 text-muted">/mo</span></h2>
                     <ul class="feature-list">
@@ -102,37 +82,41 @@
                 </div>
             </div>
 <!-- Card3 -->
-            <div class="col-md-4 col-lg-3">
-                <div class="price-card h-100">
+            <div class="col-md-3 col-lg-3">
+                <div class="price-card">
                     <span class="badge bg-light text-muted mb-3">Premium</span>
                     <h2>$29<span class="fs-6 text-muted">/mo</span></h2>
                     <ul class="feature-list">
-                        <li><span class="check-circle">✓</span> Unlimited users</li>
-                        <li><span class="check-circle">✓</span> Community support</li>
-                        <li><span class="check-circle">✓</span> Style customizer</li>
-                        <li><span class="check-circle">✓</span> Custom components</li>
-                        <li><span class="check-circle">✓</span> Expanded utilities</li>
-                        <li><span class="check-circle">✓</span> Third-party integration</li>
-                        <li><span class="check-circle">✓</span> Layout options</li>
+                        <li><span class="check-circle">✔️</span> Unlimited users</li>
+                        <li><span class="check-circle">✔️</span> Community support</li>
+                        <li><span class="check-circle">✔️</span> Style customizer</li>
+                        <li><span class="check-circle">✔️</span> Custom components</li>
+                        <li><span class="check-circle">✔️</span> Expanded utilities</li>
+                        <li><span class="check-circle">✔️</span> Third-party integration</li>
+                        <li><span class="check-circle">✔️</span> Layout options</li>
                     </ul>
                 </div>
             </div>
         </div>
-<!-- Get Started Btn -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-4 col-lg-3 text-center">
-                <button class="btn btn-primary w-100 rounded-pill py-3 fw-bold">Get Started</button>
-            </div>
-        </div>
+</div> 
+<!-- button -->
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4 text-center">
+        <button class="btn btn-primary px-4 me-3 fw-bold">
+            Get Started
+        </button>
+    </div>
+</div>
+
 
         <hr class="my-5">
 <!-- Sub2 -->
-        <div class="text-center mb-5">
+        <div class="custom-container text-center mb-5">
             <h5 class="fw-bold">One plan, no hassle</h5>
             <p class="text-muted">Easy pricing means no surprises.</p>
         </div>
 <!-- PriceCard -->
-        <div class="row g-0 justify-content-center align-items-stretch mb-5">
+        <div class="custom-container row g-0 justify-content-center align-items-stretch mb-5">
             <div class="col-lg-5 col-md-6">
                 <div class="one-plan-card h-100 shadow-sm">
                     <div class="p-5">
@@ -170,12 +154,12 @@
 <!-- EndCards -->
         <div class="row align-items-center py-5">
             <div class="col-md-6 text-center text-md-start">
-              <h4 class="fw-bold">Ready to get started?</h4>
+                <h4 class="fw-bold">Ready to get started?</h4>
                 <p class="text-muted small">Get in touch or create an account.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <button class="btn btn-primary px-4 me-2">Contact Sales</button>
-                <button class="btn btn-outline-dark px-4">Create Account</button>
+                <button class="btn btn-light px-4">Create Account</button>
             </div>
         </div>
 
@@ -201,19 +185,6 @@
         </div>
     </main>
 
-    <script>
-      const currentPage = location.pathname.split("/").pop();
-
-      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-      navLinks.forEach(link => {
-        const linkPage = link.getAttribute("href");
-
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        }
-      });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

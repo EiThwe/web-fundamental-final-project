@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #0d5fe9 !important;
   letter-spacing: 0;
@@ -81,7 +81,7 @@ body {
   }
 
   .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .navbar-toggler {

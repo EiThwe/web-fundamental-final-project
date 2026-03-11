@@ -12,13 +12,14 @@
     margin-left:  150px;
     margin-right: 150px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .hero-content h1{
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #2d2e2e;
-    font-weight: 500;  /* Made less bold (was bold) */
+    font-weight: 500;  
 }
 
 .hero-content p {
@@ -27,27 +28,27 @@
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 400;  /* Made bolder (was lighter) */
+    font-weight: 400;  
 }
 
 .hero-image img {
-    width: 800px;                  
+    width: 700px;                  
     height: auto;        
-    max-height: 700px;   
+    max-height: 600px;   
     border-radius: 10px;         
 }
 
 .button-group {
     display: flex;
     gap: 23px;                    
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .btn-demo {
     background: #0d6efd;
     color: white;
     border: none;
-    padding: 14px 20px;
+    padding: 12px 18px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 16px;
@@ -57,7 +58,7 @@
     background:#e0e9f8 ;
     color: #0d6efd;
     border: 1px solid #0d6efd;
-    padding: 14px 20px;
+    padding: 12px 18px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 16px;
@@ -124,7 +125,7 @@
     
     .btn-demo,
     .btn-doc {
-        padding: 12px 18px;  /* Adjusted for medium screens */
+        padding: 12px 18px;  
         font-size: 15px;
     }
 }
@@ -193,7 +194,7 @@
     .btn-demo,
     .btn-doc {
         width: 100%;
-        padding: 14px 20px;  /* Back to original for mobile */
+        padding: 14px 20px; 
         font-size: 16px;
     }
     
@@ -229,14 +230,14 @@
     }
     
     .hero-image img {
-        width: 700px;
+        width: 550px;
         height: auto;
-        max-height: 600px;
+        max-height: 520px;
     }
     
     .btn-demo,
     .btn-doc {
-        padding: 14px 20px;  
+        padding: 11px 17px;  
         font-size: 17px;
     }
 }

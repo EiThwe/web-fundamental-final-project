@@ -20,10 +20,10 @@ footer {
     background: linear-gradient(135deg, #0d6efd, #442481) !important;
 }
 
-/* ============= RESPONSIVE DESIGN - FOOTER ============= */
 
 
-@media screen and (max-width: 1200px) {
+
+/*@media screen and (max-width: 1200px) {
     footer .container {
         max-width: 960px;
         margin: 0 auto;
@@ -53,8 +53,8 @@ footer {
     }
 }
 
-/* For tablets (768px and below) */
-@media screen and (max-width: 768px) {
+/** For tablets (768px and below) */
+/*@media screen and (max-width: 768px) {
     footer {
         padding: 40px 0 !important;
     }
@@ -101,7 +101,7 @@ footer {
 }
 
 /* For mobile phones (576px and below) */
-@media screen and (max-width: 576px) {
+/*@media screen and (max-width: 576px) {
     footer {
         padding: 30px 0 !important;
     }
@@ -149,7 +149,7 @@ footer {
 }
 
 /* For very small phones (400px and below) */
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
     footer {
         padding: 25px 0 !important;
     }
@@ -164,7 +164,7 @@ footer {
     
     footer a {
         font-size: 0.75rem;  /* Slightly smaller on tiny screens */
-    }
+    /*}
     
     footer p {
         font-size: 0.85rem;
@@ -176,7 +176,7 @@ footer {
 }
 
 /* For very large screens */
-@media screen and (min-width: 1600px) {
+/*@media screen and (min-width: 1600px) {
     footer .container {
         max-width: 1400px;
     }
@@ -200,8 +200,8 @@ footer, footer * {
 }
 
 /* Fix for gradient on mobile */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .bg-dark {
         background: linear-gradient(135deg, #0d6efd, #442481) !important;
     }
-}
+} */

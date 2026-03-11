@@ -1,155 +1,184 @@
-body { 
-    background-color: #f2f5f9; 
+body {
+  margin: 0;
+  font-family: "Metropolis", sans-serif !important;
+  letter-spacing: 0.5px;
+  background-color: #e9ecef;
 }
 .hero-section {
-    padding-top: 70px;
-    height: 450px;
-    background: linear-gradient(120deg, #134fe9, #5a1bd8);
-    color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  padding-top: 70px;
+  height: 450px;
+  background: linear-gradient(120deg, #134fe9, #5a1bd8);
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .hero-subtitle {
-    font-size: 1.1rem;
-    opacity: 0.5;
-    margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  margin-top: 15px;
 }
 .hero-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
 }
 .hero-wave svg {
-    width: 100%;
-    height: 100px;
-    display: block;
+  width: 100%;
+  height: 100px;
+  display: block;
 }
 .section-header-text {
-    margin-top: 60px; 
-    margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .price-card {
-    border: none;
-    border-radius: 20px;
-    background: white;
-    padding: 40px 30px;
-    text-align: center;
-    transition: all 0.3s ease;
-    height: 100%;
-}
-.price-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 1rem 3rem rgba(33, 40, 50, 0.1);
+  border: none;
+  border-radius: 5px;
+  background: white;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.5rem 2rem;
+  /* height: 100%;
+    width: 100%; */
+  z-index: 1;
 }
 .featured-card {
-    border-top: 6px solid #0061f2;
-    box-shadow: 0 0.5rem 2rem rgba(33, 40, 50, 0.05);
+  border-top: 6px solid #0061f2;
+  box-shadow: 0 0.5rem 2rem;
+  z-index: 10;
+  transform: scale(1.13);
 }
 .feature-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 2.5rem;
-    text-align: left; 
+  list-style: none;
+  padding: 0;
+  margin-top: 2.5rem;
+  text-align: left;
 }
-.feature-list li { 
-    margin-bottom: 1rem; 
-    font-size: 0.9rem; 
-    display: flex; 
-    align-items: center;
+.feature-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
 }
 .check-circle {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: rgba(0, 201, 167, 0.1);
-    color: #00c9a7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    margin-right: 12px;
-    flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(0, 201, 167, 0.1);
+  color: #00c9a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 .empty-circle {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid #e9ecef;
-    margin-right: 12px;
-    flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #e9ecef;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 .one-plan-card {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 0.5rem 2rem rgba(33, 40, 50, 0.08);
-    height: 100%;
-    overflow: hidden;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 0 30px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  margin-right: -30px;
 }
 .dark-card {
-    background: #212832;
-    color: white;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: none;
+  background: linear-gradient(120deg, #134fe9, #5a1bd8);
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  border: none;
+  position: reative;
+  z-index: 1;
+  margin-left: 0;
 }
 
 .dark-card-body {
-    padding: 3rem;
-    flex-grow: 1;
+  padding: 3rem;
+  flex-grow: 1;
 }
 
 .dark-badge {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .dark-bottom {
-    background: #151921;
-    padding: 1.5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: white !important;
-    transition: background 0.2s;
+  background: #151921;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white !important;
+  transition: background 0.2s;
 }
 
 .dark-bottom:hover {
-    background: #000;
+  background: #000;
 }
 
 .highlight-card {
-    background: white;
-    border-radius: 15px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0.15rem 1.75rem rgba(33, 40, 50, 0.05);
-    height: 100%;
-    transition: all 0.3s ease;
+  background: white;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.15rem 1.75rem rgba(33, 40, 50, 0.05);
+  height: 40%;
+  transition: all 0.3s ease;
 }
 
 .icon-circle {
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: #38a2d2; 
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1.5rem;
-    flex-shrink: 0;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #38a2d2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+.get-started-btn-row {
+  margin-top: 50px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: #0061f2;
+  border: none;
+  padding: 12px 50px;
+  font-size: 1.1rem;
+}
+.custom-container {
+  width: 100%;
+  padding-inline: 1rem; /* small devices */
+  margin-right: auto;
+  margin-left: auto;
 }

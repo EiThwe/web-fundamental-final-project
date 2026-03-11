@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -8,11 +8,11 @@ html, body {
 body {
     flex: 1;
 
-}
+} */
 
 footer {
     margin-top: auto; 
-    font-family: sans-serif, "Metropolis" !important;
+    /* font-family: sans-serif, "Metropolis" !important; */
 
 }
 

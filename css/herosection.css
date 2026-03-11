@@ -1,9 +1,9 @@
-body {
+/* body {
   margin: 0;
   font-family: sans-serif, "Metropolis" !important;
   background-color: #fcfdfe;
   color: #333;
-}
+} */
 
 .hero-section {
     display: flex;

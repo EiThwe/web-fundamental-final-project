@@ -22,3 +22,13 @@ footer,
 footer * {
   transition: all 0.3s ease;
 }
+
+.my-footer-container {
+    width: 100%;
+    margin-inline: auto;        /* This centers it */
+    padding-inline: 4.2rem;       /* Increased from 1rem to 3rem for more padding */
+    
+    /* Add max-width if you want to control width */
+    max-width: 1200px;          /* Optional - adjust as needed */
+}
+

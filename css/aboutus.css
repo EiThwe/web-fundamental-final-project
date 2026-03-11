@@ -257,7 +257,7 @@ hr {
     line-height: 1.5;
     font-size: 17px;
     margin-top: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 /* ============= RESPONSIVE DESIGN ============= */
@@ -355,7 +355,7 @@ hr {
     }
 }
 
-/* For mobile phones (576px and below) */
+
 @media screen and (max-width: 576px) {
     .quick-guide,
     .what-we-do,
@@ -453,7 +453,7 @@ hr {
     }
 }
 
-/* Fix for very large screens */
+
 @media screen and (min-width: 1600px) {
     .quick-guide,
     .what-we-do,
@@ -467,7 +467,7 @@ hr {
     }
 }
 
-/* Fix for the about-company text visibility */
+
 .about-company h1,
 .about-company h4 {
     position: relative;
@@ -475,7 +475,7 @@ hr {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Ensure images are responsive */
+
 img {
     max-width: 100%;
     height: auto;
@@ -490,4 +490,41 @@ img {
 .about-question,
 .about-company {
     transition: all 0.3s ease;
+}
+
+/* Add this to your aboutus.css file */
+.custom-container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .custom-container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

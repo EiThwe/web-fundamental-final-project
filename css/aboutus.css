@@ -1,4 +1,4 @@
-/* Add this at the beginning of your CSS file */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
 }
 
 html, body {
-    overflow-x: hidden;  /* This HIDES horizontal scrollbar */
+    overflow-x: hidden;  
     width: 100%;
 }
 
 body {
   margin: 0;
   font-family: sans-serif, "Metropolis" !important;
-  background-color: #e9ecef;
+  background-color: #fbfdff;
   color: #333;
 }
 
@@ -97,6 +97,7 @@ body {
     font-weight:400;
     font-size: 24px;
     color: #3c3737;
+    margin-top: 80px;
 }
 
 .quick-guide p {
@@ -113,7 +114,7 @@ hr {
     width: 60%;
     border: none;
     border-top: 1px solid #686868;
-    margin: 40px auto;
+    margin: 30px auto;
     display: block;
 }
 

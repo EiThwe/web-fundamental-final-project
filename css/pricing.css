@@ -15,34 +15,38 @@ body {
     background-color: #e9ecef; 
 }
 .hero-section {
-    padding-top: 70px;
-    height: 450px;
-    background: linear-gradient(120deg, #134fe9, #5a1bd8);
-    color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.hero-subtitle {
-    font-size: 1.1rem;
-    opacity: 0.5;
-    margin-top: 15px;
-}
-.hero-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-}
-.hero-wave svg {
-    width: 100%;
-    height: 100px;
-    display: block;
+  padding-top: 70px;
+  height: 450px;
+  background: linear-gradient(120deg, #134fe9, #5a1bd8);
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.hero-subtitle {
+  font-size: 18px;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-wave svg {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+.simple-pricing {
+    margin-top:60px;
+}
 .section-header-text {
     margin-top: 60px; 
     margin-bottom: 40px;
@@ -57,14 +61,33 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 0.05rem 0.25rem;
     z-index: 1;
+    height:100;
+}
+@media (min-width992px){
+  .pricing-row{
+    margin-top:60px;
+  }
+  .pricing-card{
+    margin:0v-40px;
+  }
+  .featured-card{
+    transform:scale(1.15)
+    /* z-index:20; */
+  }
+
+}
+.pricing-row{
+  margin-top:40px;
 }
 .featured-card {
-    /* border-top: 6px solid #0061f2; */
-    box-shadow: 0 0.05rem 0.5rem;
-    z-index:10;
+    box-shadow: 0 0.05rem 0.25rem;
+}
+/* @media (min-width:992px){
+    .featured-card{
     transform : scale(1.13);
     margin: 0 10px;
-}
+    }
+} */
 .feature-list {
     list-style: none;
     padding: 0;
@@ -113,22 +136,16 @@ body {
     background:linear-gradient(120deg, #134fe9, #5a1bd8);
     color: white;
     border-radius: 5px;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* height: 50%; */
-    height: 100%;
+    height: 50%;
     border: none;
     position:reative;
     z-index: 1;
     margin-left: -60px;
+    flex-grow:1;
 }
-
-.dark-card-body {
-    padding: 3rem;
-    flex-grow: 1;
-}
-
 .dark-badge {
     background: rgba(255, 255, 255, 0.1);
     padding: 5px 15px;
@@ -137,26 +154,26 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+.dark-card-body{
+  flex-grow:1;
+  padding:3;
+}
 
 .dark-bottom {
-    background: #151921;
-    padding: 1.5rem 3rem;
+    background:linear-gradient(120deg, #134fe9, #5a1bd8);
+    padding:3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     color: white !important;
     transition: background 0.2s;
+    margin-top:auto;
 }
-
-.dark-bottom:hover {
-    background: #000;
-}
-
 .highlight-card {
     background: white;
     border-radius: 5px;
-    padding: 2rem;
+    padding: 30px;
     display: flex;
     align-items: center;
     box-shadow: 0 0.15rem 1.75rem rgba(33, 40, 50, 0.05);
@@ -182,69 +199,3 @@ body {
     z-index: 1;
 }
 
-.btn-primary {
-    background-color: #0061f2;
-    border: none;
-    padding: 12px 50px;
-    font-size: 1.1rem;
-}
-/* .custom-container {
-  width: 100%;
-  padding-inline: 1rem;
-  margin-right: auto;
-  margin-left: auto;
-} */
-.custom-container {
-  width: 100%;
-  padding-inline: 1rem; /* small devices */
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Small devices */
-@media (min-width: 576px) {
-  .custom-container {
-    max-width: 540px;
-    padding-inline: 1.5rem;
-  }
-}
-
-/* Medium devices */
-@media (min-width: 768px) {
-  .custom-container {
-    max-width: 720px;
-    padding-inline: 2rem;
-  }
-}
-
-/* Large devices */
-@media (min-width: 992px) {
-  .custom-container {
-    max-width: 960px;
-    padding-inline: 4rem;
-  }
-}
-
-/* Extra large devices */
-@media (min-width: 1200px) {
-  .custom-container {
-    max-width: 1140px;
-    padding-inline: 6rem;
-  }
-}
-
-/* XXL devices */
-@media (min-width: 1400px) {
-  .custom-container {
-    max-width: 1320px;
-    padding-inline: 8em;
-  }
-}
-/* .ecustom-container {
-  width: 100%;
-  padding-right: 1rem; /* padding-inline အစား ဒါကို သုံးရင် browser အဟောင်းတွေမှာပါ ပိုအဆင်ပြေပါတယ်
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px; /* ဒါက original design အချိုးအစားကို ထိန်းပေးမှာပါ
-} */

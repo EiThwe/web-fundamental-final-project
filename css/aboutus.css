@@ -1,19 +1,18 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    overflow-x: hidden;  
-    width: 100%;
-}
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/100.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/200.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/300.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/400.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/500.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/600.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/700.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/800.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/metropolis/900.css");
 
 body {
   margin: 0;
   font-family: "Metropolis", sans-serif !important;
   background-color: #fbfdff;
+  letter-spacing: 0.5px !important;
   color: #333;
 }
 
@@ -53,478 +52,449 @@ body {
   display: block;
 }
 
-/* .about-company {
-  text-align: center;
-  padding: 60px 20px;
-} */
-
-/* .about-company h1 
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #f1f3f5;
-  font-weight:bold;
-} */
-
-/* .about-company h4 {
-  font-size: 1.1rem;
-  font-weight: 200;
-  color: #f7f5f5;
-  margin-top: 2;
-} */
-
-/* .about-company {
-  background: linear-gradient(135deg, #0d6efd, #6111e1);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  margin: 40px 0;
-  clip-path: ellipse(100% 90% at 50% 0%);
-} */
-
 /*============= ., ==================*/
 
 .quick-guide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 300px;
 }
 
 .quick-guide h3 {
-    font-weight:400;
-    font-size: 24px;
-    color: #3c3737;
-    margin-top: 80px;
+  font-weight: medium;
+  font-size: 24px;
+  color: #3c3737;
+  margin-top: 80px;
 }
 
 .quick-guide p {
-    color: #8e8e8e;
-    line-height: 1.5;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight:lighter;
+  color: #8e8e8e;
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: justify;
 }
 
 /*--------  ----------*/
-hr {
-    width: 60%;
-    border: none;
-    border-top: 1px solid #686868;
-    margin: 30px auto;
-    display: block;
+.quick-guide-line {
+  width: 60%;
+  border: none;
+  border-top: 1px solid #686868;
+  margin: 30px auto;
+  display: block;
 }
 
 /*--------  ----------*/
 
-.title-container{
-    display: flex;
-    align-items: center;
-    margin: 0 300px;
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .blue-circle-arrow {
-    width: 35px;
-    height: 35px;
-    background-color: #0d6efd;
-    border-radius: 50%;
-    display:inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 16px;
-    font-weight:bolder;
-    margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-right: 15px;
 }
 
 .title-container h3 {
-    
-    font-size: 22px;
-    color: #3c3737;
-    font-weight: 400;
-    margin-top: 10px;
+  font-size: 22px;
+  color: #3c3737;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 /*--------  ----------*/
 .what-we-do {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 300px;
 }
 
 .what-we-do p {
-    font-weight:lighter;
-    color: #8e8e8e;
-    line-height: 1.5;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-weight: medium;
+  text-align: justify;
+  color: #8e8e8e;
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*--------  ----------*/
 
 .about-question {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 33px;
-    background-color: #e0ebfd;
-    border: 1px solid #696767;    
-    padding: 10px 20px;                    
-    border-radius: 8px;        
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 33px;
+  background-color: #e0ebfd;
+  border: 1px solid #696767;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.about-question h4{
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #3c3737;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 1px;
+.about-question h4 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #3c3737;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 1px;
 }
 
-.about-question P{
-    font-family: sans-serif;
-    color: #8d8d8d;
-    line-height: 1.5;
-    font-size: 16px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.about-question P {
+  font-family: sans-serif;
+  color: #8d8d8d;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
-
-
 
 /* Fixing the about-question list spacing */
 .about-question ul {
-    padding-left: 25px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .about-question li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .about-question li p {
-    margin: 3px 0;
-    font-weight:lighter;
-
+  margin: 3px 0;
+  font-weight: lighter;
 }
 
 /*--------  ----------*/
 
 .how-we-move {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 300px;
 }
 
 .how-we-move p {
-    font-weight:lighter;
-    color: #8e8e8e;
-    line-height: 1.5;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-weight: medium;
+  color: #8e8e8e;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .feed-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 300px;
 }
 
 .feed-back h3 {
-    font-family: sans-serif;
-    font-weight:400;
-    font-size: 23px;
-    color: #3c3737;
-    margin-bottom: 0px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  color: #3c3737;
+  margin-bottom: 0px;
 }
 
-.feed-back P{
-    font-weight:lighter;
-    color: #8e8e8e;
-    line-height: 1.5;
-    font-size: 17px;
-    margin-top: 7px;
-    margin-bottom: 70px;
+.feed-back P {
+  font-weight: medium;
+  color: #8e8e8e;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 7px;
+  margin-bottom: 70px;
 }
 
 /* ============= RESPONSIVE DESIGN ============= */
 
 /* For large desktops (1200px and below) */
-@media screen and (max-width: 1200px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container,
-    .about-question {
-        margin-left: 150px;
-        margin-right: 150px;
-    }
+@media (min-width: 1200px) {
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .title-container,
+  .about-question {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .quick-guide-line {
+    width: 80%;
+    margin: 30px auto;
+  }
 }
 
 /* For medium desktops/tablets (992px and below) */
 @media screen and (max-width: 992px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container,
-    .about-question {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    
-    .about-company {
-        height: 350px;
-    }
-    
-    .about-company h1 {
-        font-size: 2.2rem;
-    }
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .title-container,
+  .about-question {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .about-company {
+    height: 350px;
+  }
+
+  .about-company h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* For tablets (768px and below) */
 @media screen and (max-width: 768px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    
-    .about-question {
-        margin-left: 30px;
-        margin-right: 30px;
-        width: auto;
-    }
-    
-    .about-company {
-        height: 300px;
-        padding: 40px 15px;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .about-company h1 {
-        font-size: 2rem;
-    }
-    
-    .about-company h4 {
-        font-size: 1rem;
-    }
-    
-    .quick-guide h3,
-    .feed-back h3 {
-        font-size: 22px;
-    }
-    
-    .title-container {
-        flex-direction: column;
-        text-align: center;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    
-    .blue-circle-arrow {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    
-    hr {
-        width: 90%;
-        margin: 30px auto;
-    }
-    
-    .about-question ul {
-        padding-left: 20px;
-    }
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .quick-guide-line,
+  .title-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .about-question {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: auto;
+  }
+
+  .about-company {
+    height: 300px;
+    padding: 40px 15px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about-company h1 {
+    font-size: 2rem;
+  }
+
+  .about-company h4 {
+    font-size: 1rem;
+  }
+
+  .quick-guide h3,
+  .feed-back h3 {
+    font-size: 22px;
+  }
+
+  .quick-guide-line {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .about-question ul {
+    padding-left: 20px;
+  }
 }
 
-
 @media screen and (max-width: 576px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    
-    .about-question {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 15px;
-    }
-    
-    .about-company {
-        height: 280px;
-        clip-path: ellipse(100% 95% at 50% 0%);
-        overflow: hidden;
-    }
-    
-    .about-company h1 {
-        font-size: 1.8rem;
-    }
-    
-    .about-company h4 {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-    
-    .quick-guide h3,
-    .feed-back h3 {
-        font-size: 20px;
-    }
-    
-    .quick-guide p,
-    .what-we-do p,
-    .how-we-move p,
-    .feed-back p {
-        font-size: 15px;
-    }
-    
-    .about-question h4 {
-        font-size: 17px;
-    }
-    
-    .about-question p {
-        font-size: 14px;
-    }
-    
-    hr {
-        width: 90%;
-        margin: 25px auto;
-    }
-    
-    .about-question ul {
-        padding-left: 15px;
-    }
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .title-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .about-question {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+  }
+
+  .about-company {
+    height: 280px;
+    clip-path: ellipse(100% 95% at 50% 0%);
+    overflow: hidden;
+  }
+
+  .about-company h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-company h4 {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .quick-guide h3,
+  .feed-back h3 {
+    font-size: 20px;
+  }
+
+  .quick-guide p,
+  .what-we-do p,
+  .how-we-move p,
+  .feed-back p {
+    font-size: 15px;
+  }
+
+  .about-question h4 {
+    font-size: 17px;
+  }
+
+  .about-question p {
+    font-size: 14px;
+  }
+
+  .quick-guide-line {
+    width: 90%;
+    margin: 25px auto;
+  }
+
+  .about-question ul {
+    padding-left: 15px;
+  }
 }
 
 /* For very small phones (400px and below) */
 @media screen and (max-width: 400px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container,
-    .about-question {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    .about-company {
-        height: 250px;
-    }
-    
-    .about-company h1 {
-        font-size: 1.5rem;
-    }
-    
-    .blue-circle-arrow {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-    
-    .title-container h3 {
-        font-size: 18px;
-    }
-    
-    hr {
-        width: 95%;
-        margin: 20px auto;
-    }
-}
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .title-container,
+  .about-question {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
+  .about-company {
+    height: 250px;
+  }
+
+  .about-company h1 {
+    font-size: 1.5rem;
+  }
+
+  .title-container h3 {
+    font-size: 18px;
+  }
+
+  .quick-guide-line {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
 
 @media screen and (min-width: 1600px) {
-    .quick-guide,
-    .what-we-do,
-    .how-we-move,
-    .feed-back,
-    .title-container,
-    .about-question {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1000px;
-    }
+  .quick-guide,
+  .quick-guide-line,
+  .what-we-do,
+  .how-we-move,
+  .feed-back,
+  .title-container,
+  .about-question {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
 }
-
 
 .about-company h1,
 .about-company h4 {
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Smooth transitions for responsive changes */
 .quick-guide,
+.quick-guide-line,
 .what-we-do,
 .how-we-move,
 .feed-back,
 .title-container,
 .about-question,
 .about-company {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Add this to your aboutus.css file */
 .custom-container {
-    width: 100%;
+  width: 100%;
+  padding-inline: 1rem; /* small devices */
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: red; */
+}
+
+/* Small devices */
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+    padding-inline: 1.5rem;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+    padding-inline: 2rem;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+    padding-inline: 4rem;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .custom-container {
     max-width: 1140px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-inline: 6rem;
+  }
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .custom-container {
-        max-width: 960px;
-    }
-}
-
-@media (max-width: 992px) {
-    .custom-container {
-        max-width: 720px;
-    }
-}
-
-@media (max-width: 768px) {
-    .custom-container {
-        max-width: 540px;
-    }
-}
-
-@media (max-width: 576px) {
-    .custom-container {
-        max-width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+/* XXL devices */
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1320px;
+    padding-inline: 8em;
+  }
 }

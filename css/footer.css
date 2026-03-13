@@ -1,4 +1,7 @@
 
+
+
+
 footer {
   margin-top: auto;
   /* font-family: "Metropolis", sans-serif !important; */
@@ -89,54 +92,55 @@ hr {
   }
 }
 
-/* Tablet Portrait (768px and below) */
-@media screen and (max-width: 768px) {
-  footer {
-    padding: 3rem 0 !important;
-  }
-  
-  .my-footer-container {
-    padding-inline: 2rem;
-    max-width: 720px;
-  }
-  
-  footer .row {
-    text-align: center;
-  }
-  
+/* TABLET VIEW (768px and below) */
+@media screen and (max-width: 900px) {
+
+  /* Make columns stack and align left */
   footer .col-md-4 {
-    margin-bottom: 2rem !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left !important;
   }
-  
-  footer h5 {
-    font-size: 1.3rem;
-  }
-  
-  footer h6 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
+
+  /* Quick Links + Legal lists */
   footer ul {
     padding-left: 0;
+    text-align: left;
   }
-  
-  /* Center social icons on tablet */
-  footer .d-flex {
-    justify-content: center;
+
+  footer li {
+    text-align: left;
   }
-  
-  footer .text-md-end {
-    text-align: center !important;
-    margin-top: 1rem;
-  }
-  
-  hr {
-    margin: 1.5rem 0;
+
+  footer a {
+    display: inline-block;
+    text-align: left;
   }
 }
 
-/* Mobile Landscape (576px and below) */
+/* Fix copyright links alignment at 768px */
+@media screen and (max-width: 900px) {
+
+  footer .row:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .row:last-child .col-md-6 {
+    text-align: left !important;
+    width: 100%;
+  }
+
+  footer .row:last-child .col-md-6:last-child {
+    margin-top: 0.5rem;
+  }
+
+  footer .row:last-child a {
+    text-align: left;
+  }
+
+}
+/* MOBILE VIEW (576px and below) - KEEP EVERYTHING LEFT */
 @media screen and (max-width: 576px) {
   footer {
     padding: 2.5rem 0 !important;
@@ -145,6 +149,18 @@ hr {
   .my-footer-container {
     padding-inline: 1.5rem;
     max-width: 100%;
+  }
+  
+  /* Keep everything left aligned */
+  footer .row,
+  footer .col-md-4,
+  footer h5,
+  footer h6,
+  footer p,
+  footer ul,
+  footer li,
+  footer a {
+    text-align: left !important;
   }
   
   footer h5 {
@@ -159,18 +175,18 @@ hr {
     font-size: 0.8rem;
   }
   
-  /* Stack copyright row */
-  footer .row .col-md-6 {
-    text-align: center !important;
+  footer .d-flex {
+    justify-content: flex-start !important;
   }
   
-  footer .row .col-md-6:first-child {
+  /* Copyright row - stacked but left aligned */
+  footer .row:last-child .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  footer .row:last-child .col-md-6:first-child {
     margin-bottom: 0.5rem;
-  }
-  
-  /* Adjust social icons size */
-  footer .d-flex a {
-    font-size: 1rem;
   }
   
   hr {
@@ -178,7 +194,7 @@ hr {
   }
 }
 
-/* Mobile Portrait (400px and below) */
+/* SMALL PHONES (400px and below) */
 @media screen and (max-width: 400px) {
   footer {
     padding: 2rem 0 !important;
@@ -200,15 +216,8 @@ hr {
     font-size: 0.75rem;
   }
   
-  /* Smaller social icons */
   footer .d-flex a {
     font-size: 0.9rem;
-  }
-  
-  /* Stack copyright text */
-  footer .row .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
 }
 
@@ -234,10 +243,4 @@ hr {
   footer .d-flex a {
     font-size: 1.2rem;
   }
-}
-
-/* Smooth transitions */
-footer,
-footer * {
-  transition: all 0.3s ease;
 }

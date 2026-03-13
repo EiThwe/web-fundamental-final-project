@@ -22,6 +22,8 @@ body {
   color: #0d5fe9 !important;
   letter-spacing: 0;
   line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .navbar .nav-link {
@@ -31,18 +33,12 @@ body {
   padding: 8px 14px;
   line-height: 1;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: #2b2f33;
-}
-
-.nav-link-arrow::after {
-  content: "›";
-  margin-left: 10px;
-  font-size: 1.1em;
-  color: #8a8f96;
 }
 
 .buy-btn {
@@ -64,6 +60,7 @@ body {
 .nav-btn-wrapper {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 /* MOBILE + TABLET */
@@ -103,12 +100,13 @@ body {
     position: static;
     transform: none;
     margin: 0;
-    align-items: flex-start;
     padding-left: 0;
+    align-items: flex-start;
   }
 
   .navbar .nav-item {
     width: 100%;
+    list-style: none;
   }
 
   .navbar .nav-link {
@@ -116,11 +114,7 @@ body {
     width: 100%;
     padding: 10px 0;
     text-align: left;
-  }
-
-  .nav-link-arrow::after {
-    float: right;
-    margin-left: 0;
+    white-space: normal;
   }
 
   .nav-btn-wrapper {
@@ -138,27 +132,32 @@ body {
 /* DESKTOP */
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
-    position: relative;
-    min-height: 40px;
     display: flex !important;
     align-items: center;
     flex: 1;
+    min-width: 0;
   }
 
   .navbar .navbar-nav.center-nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 12px;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+
+  .navbar .nav-item {
+    list-style: none;
   }
 
   .nav-btn-wrapper {
-    margin-left: auto;
+    margin-left: 24px;
     justify-content: flex-end;
   }
 }
